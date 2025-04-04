@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management Dashboard</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>AGRIFY</h2>
+        <p>Azeem Abdu<br><small>Admin</small></p>
+        <a href="#" class="active">Home</a>
+        <a href="#">Livestock Details</a>
+        <a href="#">Cages</a>
+        <a href="#">Settings</a>
+        <img src="https://via.placeholder.com/200" alt="Farm Image">
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Home | 38°C Sunny</h1>
+            <button>+ Add Cage</button>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Financial Statistics</h3>
+                <p>Achieved: <strong>78%</strong></p>
+                <div class="progress-container">
+                    <div class="progress"><span></span></div>
+                </div>
+                <p>Expected Profit: <strong>700,000.00</strong></p>
+                <p>Current Profit: <strong>150,000.00</strong></p>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="salesChart"></canvas>
+        </div>
+    </div>
+    
+   <script src="script.js"></script>
+</body>
+</html>
